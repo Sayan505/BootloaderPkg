@@ -1,0 +1,42 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = BootX64
+  FILE_GUID      = cd034af6-f4c8-11ed-a8f7-5811227f1cf7
+  MODULE_TYPE    = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT    = UefiMain
+
+[Sources]
+  Bootloader.h
+  Bootloader.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  BootloaderPkg/Application/BootloaderPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
+  UefiRuntimeServicesTableLib
+  UefiRuntimeLib
+  MemoryAllocationLib
+  DevicePathLib
+  BaseLib
+  BaseMemoryLib
+  PrintLib
+  PcdLib
+  DebugLib
+  DebugPrintErrorLevelLib
+  RegisterFilterLib
+  UefiMemoryAllocationLib
+
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]

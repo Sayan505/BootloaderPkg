@@ -1,0 +1,5 @@
+[Defines]
+  DEC_SPECIFICATION = 0x00010005
+  PACKAGE_NAME      = BootloaderPkg
+  PACKAGE_GUID      = 1dac47e-f4ca-11ed-8496-5811227f1cf7
+  PACKAGE_VERSION   = 1.0
